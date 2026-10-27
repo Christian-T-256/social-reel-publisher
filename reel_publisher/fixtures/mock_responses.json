@@ -1,0 +1,37 @@
+{
+  "identities": {
+    "youtube": {
+      "account_id": "yt-northwind-demo",
+      "display_name": "Northwind Dental"
+    },
+    "instagram": {
+      "account_id": "ig-northwind-demo",
+      "display_name": "northwinddental_demo"
+    },
+    "tiktok": {
+      "account_id": "tt-northwind-demo",
+      "display_name": "Northwind Dental"
+    }
+  },
+  "wrong_identity": {
+    "account_id": "yt-jamie-personal-demo",
+    "display_name": "Jamie Rivera"
+  },
+  "responses": {
+    "youtube": {
+      "http_status": 200,
+      "artifact_id": "video-demo-001",
+      "states": ["processing", "succeeded"]
+    },
+    "instagram": {
+      "http_status": 200,
+      "artifact_id": "reel-demo-001",
+      "states": ["IN_PROGRESS", "FINISHED"]
+    },
+    "tiktok": {
+      "http_status": 200,
+      "artifact_id": "draft-demo-001",
+      "states": ["PROCESSING_UPLOAD", "SEND_TO_USER_INBOX"]
+    }
+  }
+}

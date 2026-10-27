@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68,<82"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "social-reel-publisher"
+version = "1.0.0"
+description = "Safety-first publishing for YouTube Shorts, Instagram Reels, and TikTok drafts"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "Christian Terrone"}]
+dependencies = [
+  "google-api-python-client>=2,<3",
+  "google-auth>=2,<3",
+  "google-auth-oauthlib>=1,<2",
+  "requests>=2,<3"
+]
+
+[project.scripts]
+reel-publisher = "reel_publisher.cli:main"
+
+[tool.setuptools.package-data]
+reel_publisher = ["fixtures/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

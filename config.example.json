@@ -1,0 +1,14 @@
+{
+  "youtube": {
+    "privacy": "unlisted",
+    "category_id": "22",
+    "processing_timeout_seconds": 600
+  },
+  "instagram": {
+    "api_version": "v25.0",
+    "processing_timeout_seconds": 600
+  },
+  "tiktok": {
+    "delivery_timeout_seconds": 180
+  }
+}

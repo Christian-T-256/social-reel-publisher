@@ -1,0 +1,7 @@
+.env
+.local-secrets/
+.pytest_cache/
+__pycache__/
+*.py[cod]
+config.json
+results.json
